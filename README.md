@@ -2,7 +2,8 @@
 
 Tutorial session from PyData Washington DC, Friday 7 October 2016.
 
-[Note! This repo currently contains the PyData London materials. Check back late on Thurs 6 Oct for the Washington DC version] 
+**_Note!_ This repo currently contains the PyData London materials.</br>
+Check back late on Thurs 6 Oct for the final Washington DC version**
 
 This tutorial is designed primarily as a presentation.
 
