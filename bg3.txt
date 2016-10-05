@@ -7166,11 +7166,11 @@ All games in chronological order
 7164.  25-Apr-1970      R4   Melbourne         17.19.121        Fitzroy           13.13.91          M.C.G.
 7165.  25-Apr-1970      R4   South Melbourne   11.11.77         Footscray         9.6.60            Waverley Park
 7166.  25-Apr-1970      R4   St Kilda          15.19.109        Richmond          7.12.54           Moorabbin Oval
-7167.  2-May-1970       R5   St Kilda          8.9.57           Carlton           12.14.86          Moorabbin Oval
-7168.  2-May-1970       R5   Collingwood       8.17.65          Melbourne         8.9.57            Waverley Park
-7169.  2-May-1970       R5   Essendon          9.14.68          Geelong           14.4.88           Windy Hill
-7170.  2-May-1970       R5   Fitzroy           5.24.54          North Melbourne   7.7.49            Junction Oval
-7171.  2-May-1970       R5   Footscray         11.13.79         Hawthorn          11.10.76          Western Oval
+7167.  2-May-1970       R5   Footscray         11.13.79         Hawthorn          11.10.76          Western Oval
+7168.  2-May-1970       R5   St Kilda          8.9.57           Carlton           12.14.86          Moorabbin Oval
+7169.  2-May-1970       R5   Collingwood       8.17.65          Melbourne         8.9.57            Waverley Park
+7170.  2-May-1970       R5   Essendon          9.14.68          Geelong           14.4.88           Windy Hill
+7171.  2-May-1970       R5   Fitzroy           5.24.54          North Melbourne   7.7.49            Junction Oval
 7172.  2-May-1970       R5   Richmond          6.13.49          South Melbourne   10.11.71          M.C.G.
 7173.  9-May-1970       R6   Carlton           23.9.147         Fitzroy           15.20.110         Princes Park
 7174.  9-May-1970       R6   North Melbourne   10.6.66          Collingwood       17.30.132         Arden St
@@ -14840,3 +14840,156 @@ All games in chronological order
 14838. 1-May-2016       R6   Brisbane Lions    14.10.94         Sydney            15.7.97           Gabba
 14839. 1-May-2016       R6   Carlton           10.12.72         Essendon          8.9.57            M.C.G.
 14840. 1-May-2016       R6   West Coast        18.16.124        Collingwood       9.8.62            Subiaco
+14841. 6-May-2016       R7   Richmond          13.12.90         Hawthorn          21.10.136         M.C.G.
+14842. 7-May-2016       R7   Collingwood       12.12.84         Carlton           15.9.99           M.C.G.
+14843. 7-May-2016       R7   Geelong           18.15.123        West Coast        12.7.79           Kardinia Park
+14844. 7-May-2016       R7   Sydney            20.15.135        Essendon          7.12.54           S.C.G.
+14845. 7-May-2016       R7   Gold Coast        14.3.87          Melbourne         24.16.160         Carrara
+14846. 7-May-2016       R7   Western Bulldogs  18.15.123        Adelaide          17.6.108          Docklands
+14847. 7-May-2016       R7   Fremantle         11.11.77         GW Sydney         14.11.95          Subiaco
+14848. 8-May-2016       R7   St Kilda          11.9.75          North Melbourne   11.16.82          Docklands
+14849. 8-May-2016       R7   Port Adelaide     21.10.136        Brisbane Lions    7.17.59           Adelaide Oval
+14850. 13-May-2016      R8   Adelaide          11.6.72          Geelong           13.20.98          Adelaide Oval
+14851. 14-May-2016      R8   Essendon          8.12.60          North Melbourne   10.14.74          Docklands
+14852. 14-May-2016      R8   Hawthorn          17.14.116        Fremantle         11.9.75           York Park
+14853. 14-May-2016      R8   GW Sydney         22.17.149        Gold Coast        9.4.58            Sydney Showground
+14854. 14-May-2016      R8   Brisbane Lions    10.5.65          Collingwood       20.23.143         Gabba
+14855. 14-May-2016      R8   Richmond          14.17.101        Sydney            15.10.100         M.C.G.
+14856. 15-May-2016      R8   Carlton           14.9.93          Port Adelaide     13.13.91          Docklands
+14857. 15-May-2016      R8   Melbourne         12.10.82         Western Bulldogs  17.12.114         M.C.G.
+14858. 15-May-2016      R8   West Coast        20.12.132        St Kilda          3.11.29           Subiaco
+14859. 20-May-2016      R9   Hawthorn          7.13.55          Sydney            10.9.69           M.C.G.
+14860. 21-May-2016      R9   Collingwood       16.8.104         Geelong           11.14.80          M.C.G.
+14861. 21-May-2016      R9   Gold Coast        11.8.74          Adelaide          22.17.149         Carrara
+14862. 21-May-2016      R9   Port Adelaide     13.8.86          West Coast        14.10.94          Adelaide Oval
+14863. 21-May-2016      R9   North Melbourne   17.11.113        Carlton           6.10.46           Docklands
+14864. 21-May-2016      R9   Fremantle         6.9.45           Richmond          11.17.83          Subiaco
+14865. 22-May-2016      R9   Melbourne         19.17.131        Brisbane Lions    9.14.68           M.C.G.
+14866. 22-May-2016      R9   GW Sydney         15.8.98          Western Bulldogs  10.13.73          Sydney Showground
+14867. 22-May-2016      R9   St Kilda          16.13.109        Essendon          9.9.63            Docklands
+14868. 27-May-2016      R10  Sydney            14.7.91          North Melbourne   9.11.65           S.C.G.
+14869. 28-May-2016      R10  Brisbane Lions    13.9.87          Hawthorn          21.9.135          Gabba
+14870. 28-May-2016      R10  Melbourne         10.16.76         Port Adelaide     18.13.121         Traeger Park
+14871. 28-May-2016      R10  St Kilda          15.11.101        Fremantle         10.7.67           Docklands
+14872. 28-May-2016      R10  Essendon          10.7.67          Richmond          16.9.105          M.C.G.
+14873. 28-May-2016      R10  Adelaide          15.17.107        GW Sydney         13.7.85           Adelaide Oval
+14874. 29-May-2016      R10  Carlton           16.8.104         Geelong           12.13.85          Docklands
+14875. 29-May-2016      R10  Collingwood       7.11.53          Western Bulldogs  11.8.74           M.C.G.
+14876. 29-May-2016      R10  West Coast        20.12.132        Gold Coast        7.13.55           Subiaco
+14877. 3-Jun-2016       R11  North Melbourne   18.16.124        Richmond          7.12.54           Bellerive Oval
+14878. 4-Jun-2016       R11  Hawthorn          11.16.82         Melbourne         10.4.64           M.C.G.
+14879. 4-Jun-2016       R11  Carlton           16.6.102         Brisbane Lions    9.10.64           Docklands
+14880. 4-Jun-2016       R11  Geelong           14.14.98         GW Sydney         14.4.88           Kardinia Park
+14881. 4-Jun-2016       R11  Gold Coast        6.5.41           Sydney            11.13.79          Carrara
+14882. 4-Jun-2016       R11  Fremantle         20.6.126         Essendon          6.11.47           Subiaco
+14883. 5-Jun-2016       R11  Collingwood       7.16.58          Port Adelaide     19.11.125         M.C.G.
+14884. 5-Jun-2016       R11  Western Bulldogs  12.11.83         West Coast        11.9.75           Docklands
+14885. 5-Jun-2016       R11  Adelaide          19.19.133        St Kilda          6.9.45            Adelaide Oval
+14886. 10-Jun-2016      R12  Essendon          6.7.43           Hawthorn          23.13.151         Docklands
+14887. 11-Jun-2016      R12  Port Adelaide     14.13.97         Western Bulldogs  15.10.100         Adelaide Oval
+14888. 11-Jun-2016      R12  Brisbane Lions    9.10.64          Fremantle         23.9.147          Gabba
+14889. 11-Jun-2016      R12  Geelong           15.15.105        North Melbourne   12.2.74           Docklands
+14890. 11-Jun-2016      R12  West Coast        11.10.76         Adelaide          15.15.105         Subiaco
+14891. 12-Jun-2016      R12  St Kilda          17.8.110         Carlton           12.6.78           Docklands
+14892. 12-Jun-2016      R12  Richmond          17.12.114        Gold Coast        15.7.97           M.C.G.
+14893. 12-Jun-2016      R12  GW Sydney         15.15.105        Sydney            9.9.63            Sydney Showground
+14894. 13-Jun-2016      R12  Melbourne         16.8.104         Collingwood       8.10.58           M.C.G.
+14895. 17-Jun-2016      R13  North Melbourne   11.18.84         Hawthorn          14.9.93           Docklands
+14896. 18-Jun-2016      R13  Brisbane Lions    12.10.82         West Coast        20.11.131         Gabba
+14897. 18-Jun-2016      R13  Fremantle         12.14.86         Port Adelaide     9.15.69           Subiaco
+14898. 18-Jun-2016      R13  Western Bulldogs  5.13.43          Geelong           16.4.100          Docklands
+14899. 19-Jun-2016      R13  Sydney            12.14.86         Melbourne         4.7.31            S.C.G.
+14900. 19-Jun-2016      R13  Essendon          12.18.90         GW Sydney         17.15.117         Docklands
+14901. 23-Jun-2016      R14  Adelaide          12.28.100        North Melbourne   10.7.67           Adelaide Oval
+14902. 24-Jun-2016      R14  Collingwood       12.13.85         Fremantle         5.7.37            M.C.G.
+14903. 25-Jun-2016      R14  Richmond          17.15.117        Brisbane Lions    11.9.75           M.C.G.
+14904. 25-Jun-2016      R14  GW Sydney         18.19.127        Carlton           9.11.65           Sydney Showground
+14905. 25-Jun-2016      R14  St Kilda          14.9.93          Geelong           13.12.90          Docklands
+14906. 26-Jun-2016      R14  Hawthorn          12.14.86         Gold Coast        8.12.60           York Park
+14907. 30-Jun-2016      R15  West Coast        20.10.130        Essendon          7.10.52           Subiaco
+14908. 1-Jul-2016       R15  Port Adelaide     14.10.94         Richmond          8.8.56            Adelaide Oval
+14909. 2-Jul-2016       R15  Gold Coast        15.18.108        St Kilda          8.20.68           Carrara
+14910. 2-Jul-2016       R15  Sydney            11.13.79         Western Bulldogs  13.5.83           S.C.G.
+14911. 2-Jul-2016       R15  Carlton           6.9.45           Collingwood       8.9.57            M.C.G.
+14912. 3-Jul-2016       R15  Melbourne         15.8.98          Adelaide          18.12.120         M.C.G.
+14913. 7-Jul-2016       R16  Port Adelaide     12.7.79          Hawthorn          15.11.101         Adelaide Oval
+14914. 8-Jul-2016       R16  Geelong           9.6.60           Sydney            15.8.98           Kardinia Park
+14915. 9-Jul-2016       R16  GW Sydney         14.9.93          Collingwood       19.11.125         Sydney Showground
+14916. 9-Jul-2016       R16  Gold Coast        22.7.139         Brisbane Lions    17.11.113         Carrara
+14917. 9-Jul-2016       R16  Western Bulldogs  12.13.85         Richmond          11.9.75           Docklands
+14918. 9-Jul-2016       R16  Melbourne         12.15.87         Fremantle         8.7.55            Marrara Oval
+14919. 10-Jul-2016      R16  Carlton           7.5.47           Adelaide          16.11.107         M.C.G.
+14920. 10-Jul-2016      R16  West Coast        16.8.104         North Melbourne   11.6.72           Subiaco
+14921. 10-Jul-2016      R16  Essendon          14.14.98         St Kilda          17.7.109          Docklands
+14922. 14-Jul-2016      R17  Sydney            10.10.70         Hawthorn          11.9.75           S.C.G.
+14923. 15-Jul-2016      R17  Fremantle         9.7.61           Geelong           11.12.78          Subiaco
+14924. 16-Jul-2016      R17  Richmond          16.6.102         Essendon          11.17.83          M.C.G.
+14925. 16-Jul-2016      R17  North Melbourne   10.17.77         Port Adelaide     16.9.105          Docklands
+14926. 16-Jul-2016      R17  Western Bulldogs  15.17.107        Gold Coast        8.11.59           Cazaly's Stadium
+14927. 16-Jul-2016      R17  Adelaide          14.13.97         Collingwood       10.9.69           Adelaide Oval
+14928. 17-Jul-2016      R17  Carlton           11.9.75          West Coast        12.10.82          M.C.G.
+14929. 17-Jul-2016      R17  St Kilda          15.20.110        Melbourne         11.8.74           Docklands
+14930. 17-Jul-2016      R17  Brisbane Lions    9.13.67          GW Sydney         22.14.146         Gabba
+14931. 22-Jul-2016      R18  Collingwood       12.12.84         North Melbourne   18.16.124         Docklands
+14932. 23-Jul-2016      R18  Sydney            10.14.74         Carlton           10.8.68           S.C.G.
+14933. 23-Jul-2016      R18  Gold Coast        16.9.105         Fremantle         12.9.81           Carrara
+14934. 23-Jul-2016      R18  West Coast        10.6.66          Melbourne         8.12.60           Subiaco
+14935. 23-Jul-2016      R18  Geelong           12.13.85         Adelaide          7.13.55           Kardinia Park
+14936. 23-Jul-2016      R18  Western Bulldogs  9.6.60           St Kilda          11.9.75           Docklands
+14937. 24-Jul-2016      R18  Essendon          12.19.91         Brisbane Lions    20.8.128          Docklands
+14938. 24-Jul-2016      R18  Hawthorn          16.18.114        Richmond          5.14.44           M.C.G.
+14939. 24-Jul-2016      R18  Port Adelaide     9.6.60           GW Sydney         11.13.79          Adelaide Oval
+14940. 29-Jul-2016      R19  Geelong           16.7.103         Western Bulldogs  11.12.78          Kardinia Park
+14941. 30-Jul-2016      R19  GW Sydney         17.9.111         Richmond          3.5.23            Manuka Oval
+14942. 30-Jul-2016      R19  Hawthorn          10.14.74         Carlton           7.13.55           York Park
+14943. 30-Jul-2016      R19  Collingwood       13.13.91         West Coast        11.6.72           M.C.G.
+14944. 30-Jul-2016      R19  North Melbourne   12.13.85         St Kilda          8.14.62           Docklands
+14945. 30-Jul-2016      R19  Brisbane Lions    11.13.79         Port Adelaide     25.23.173         Gabba
+14946. 31-Jul-2016      R19  Melbourne         9.12.66          Gold Coast        9.10.64           M.C.G.
+14947. 31-Jul-2016      R19  Fremantle         7.5.47           Sydney            21.11.137         Subiaco
+14948. 31-Jul-2016      R19  Adelaide          22.11.143        Essendon          9.7.61            Adelaide Oval
+14949. 5-Aug-2016       R20  Richmond          14.8.92          Collingwood       11.11.77          M.C.G.
+14950. 6-Aug-2016       R20  Sydney            14.16.100        Port Adelaide     4.9.33            S.C.G.
+14951. 6-Aug-2016       R20  Melbourne         17.8.110         Hawthorn          11.15.81          M.C.G.
+14952. 6-Aug-2016       R20  Gold Coast        13.6.84          GW Sydney         14.8.92           Carrara
+14953. 6-Aug-2016       R20  Western Bulldogs  9.7.61           North Melbourne   7.5.47            Docklands
+14954. 6-Aug-2016       R20  Adelaide          27.15.177        Brisbane Lions    6.3.39            Adelaide Oval
+14955. 7-Aug-2016       R20  Carlton           7.9.51           St Kilda          19.8.122          M.C.G.
+14956. 7-Aug-2016       R20  Geelong           15.10.100        Essendon          4.10.34           Docklands
+14957. 7-Aug-2016       R20  Fremantle         9.10.64          West Coast        17.8.110          Subiaco
+14958. 12-Aug-2016      R21  Western Bulldogs  14.11.95         Collingwood       14.8.92           Docklands
+14959. 13-Aug-2016      R21  Brisbane Lions    15.9.99          Carlton           13.17.95          Gabba
+14960. 13-Aug-2016      R21  Hawthorn          14.12.96         North Melbourne   8.9.57            M.C.G.
+14961. 13-Aug-2016      R21  GW Sydney         14.12.96         West Coast        14.13.97          Sydney Showground
+14962. 13-Aug-2016      R21  St Kilda          11.10.76         Sydney            23.8.146          Docklands
+14963. 13-Aug-2016      R21  Port Adelaide     8.6.54           Melbourne         13.16.94          Adelaide Oval
+14964. 14-Aug-2016      R21  Essendon          11.9.75          Gold Coast        9.15.69           Docklands
+14965. 14-Aug-2016      R21  Richmond          12.6.78          Geelong           10.22.82          M.C.G.
+14966. 14-Aug-2016      R21  Fremantle         11.4.70          Adelaide          21.16.142         Subiaco
+14967. 19-Aug-2016      R22  West Coast        13.14.92         Hawthorn          10.7.67           Subiaco
+14968. 20-Aug-2016      R22  North Melbourne   10.16.76         Sydney            12.13.85          Bellerive Oval
+14969. 20-Aug-2016      R22  Richmond          6.10.46          St Kilda          7.13.55           M.C.G.
+14970. 20-Aug-2016      R22  GW Sydney         19.15.129        Fremantle         5.7.37            Sydney Showground
+14971. 20-Aug-2016      R22  Collingwood       16.22.118        Gold Coast        6.11.47           Docklands
+14972. 20-Aug-2016      R22  Port Adelaide     14.10.94         Adelaide          15.19.109         Adelaide Oval
+14973. 21-Aug-2016      R22  Carlton           11.12.78         Melbourne         7.16.58           M.C.G.
+14974. 21-Aug-2016      R22  Brisbane Lions    10.9.69          Geelong           19.15.129         Gabba
+14975. 21-Aug-2016      R22  Essendon          7.11.53          Western Bulldogs  14.9.93           Docklands
+14976. 26-Aug-2016      R23  Adelaide          10.11.71         West Coast        14.16.100         Adelaide Oval
+14977. 27-Aug-2016      R23  Geelong           24.11.155        Melbourne         6.8.44            Kardinia Park
+14978. 27-Aug-2016      R23  Essendon          15.13.103        Carlton           10.19.79          M.C.G.
+14979. 27-Aug-2016      R23  Sydney            25.14.164        Richmond          7.9.51            S.C.G.
+14980. 27-Aug-2016      R23  North Melbourne   9.9.63           GW Sydney         14.16.100         Docklands
+14981. 27-Aug-2016      R23  Gold Coast        9.12.66          Port Adelaide     13.11.89          Carrara
+14982. 28-Aug-2016      R23  St Kilda          25.11.161        Brisbane Lions    15.13.103         Docklands
+14983. 28-Aug-2016      R23  Hawthorn          17.10.112        Collingwood       17.9.111          M.C.G.
+14984. 28-Aug-2016      R23  Fremantle         10.9.69          Western Bulldogs  6.13.49           Subiaco
+14985. 8-Sep-2016       EF   Western Bulldogs  14.15.99         West Coast        7.10.52           Subiaco
+14986. 9-Sep-2016       QF   Geelong           12.13.85         Hawthorn          12.11.83          M.C.G.
+14987. 10-Sep-2016      QF   GW Sydney         12.19.91         Sydney            7.13.55           Stadium Australia
+14988. 10-Sep-2016      EF   Adelaide          21.15.141        North Melbourne   12.7.79           Adelaide Oval
+14989. 16-Sep-2016      SF   Western Bulldogs  16.11.107        Hawthorn          12.12.84          M.C.G.
+14990. 17-Sep-2016      SF   Sydney            18.10.118        Adelaide          12.10.82          S.C.G.
+14991. 23-Sep-2016      PF   Sydney            15.7.97          Geelong           8.12.60           M.C.G.
+14992. 24-Sep-2016      PF   Western Bulldogs  13.11.89         GW Sydney         12.11.83          Sydney Showground
+14993. 1-Oct-2016       GF   Western Bulldogs  13.11.89         Sydney            10.7.67           M.C.G.
