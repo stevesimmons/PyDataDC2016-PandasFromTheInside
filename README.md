@@ -1,6 +1,9 @@
 # Pandas from the Inside
 
-Tutorial session from PyData London, Fri 6 May 2016.
+Tutorial session from PyData Washington DC, Friday 7 October 2016.
+
+**_Note!_ This repo currently contains the PyData London materials.</br>
+Check back late on Thurs 6 Oct for the final Washington DC version**
 
 This tutorial is designed primarily as a presentation.
 
