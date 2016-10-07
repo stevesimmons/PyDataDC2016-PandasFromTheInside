@@ -1,57 +1,63 @@
-# Sample code from the tutorial 'Pandas from the Inside'
-# Stephen Simmons - mail@stevesimmons.com
-# PyData London, Fri 6 May 2016
+# Pandas from the Inside
+# PyData DC Tutorial - Friday 7 October 2016
+# 
+# Stephen Simmons - mail@stevesimmons.com 
+# http://github.com/stevesimmons
 #
-# Requires Python3, Pandas, Numpy. Best with IPython and Pandas 0.18.0.
-# Note: has a workaround for an indexing bug in pandas 0.18.0.
-
-
-import numpy as np
-import pandas as pd
-print("numpy=%s; pandas=%s" % (np.__version__, pd.__version__))
+# Requires python3, pandas and numpy. 
+# Best with pandas 0.18.1 or 0.19.0.
+# Pandas 0.18.0 requires a workaround for an indexing bug.
 
 import csv
 import os
 
+import numpy as np
+import pandas as pd
 
-# Better output formatting defaults
+# Don't wrap tables 
 pd.options.display.max_rows = 20
 pd.options.display.width = 200
 
-def main():
-    if not os.path.exists('bg3.txt'):
-        # Download bg3.txt from www.afltables.com
-        download_sample_data()
+def main(name='bg3.txt'):
+    print("numpy=%s; pandas=%s" % (np.__version__, pd.__version__))
 
-    df = load_scores()
-    scores = prepare_scores(df)
-    ladder = calc_ladder(scores)
-    return scores, ladder
+    # Download sample data from www.afltables.com if not present
+    if not os.path.exists(name):
+        download_sample_data(names=[name])
+
+    # Part 1 - Load sample data as a DataFrame (1 game => 1 row)
+    raw_df = load_data(name)
+    # Part 2 - Reshape to give team scores (1 game => 2 rows)
+    scores_df = prepare_game_scores(raw_df)
+    # Parts 3 and 4 - GroupBy to get Wins/Draws/Losses/Points
+    ladder_df = calc_team_ladder(scores_df)
+    print(ladder_df)
 
 
-def download_sample_data():
+def download_sample_data(names=('bg3.txt', 'bg7.txt')):
     '''
-    Download results of every AFL match from www.afltables.com
-    (14800 games since 1897)
+    Download results and attendance stats for every AFL match 
+    since 1897 from www.afltables.com into files 
+    'bg3.txt' and 'bg7.txt' in the current directory. 
     '''
     import urllib.request
 
     base_url = 'http://afltables.com/afl/stats/biglists/'
-    for filename in ('bg3.txt', 'bg7.txt'):
+    for filename in names:
         url = base_url + filename
         print("Downloading from %s" % url)
         txt = urllib.request.urlopen(url).read()
         with open(filename, 'wb') as f:
             f.write(txt)
-            print("Wrote %d bytes to %s" % ( len(txt), filename ))
+            print("Wrote %d bytes to %s" % (len(txt), filename))
 
 
-def load_scores(filename='bg3.txt'):
+def load_data(name='bg3.txt'):
     '''
     Pandas DataFrames from loading csv files bg3.txt (games) or
     bg7.txt (attendance) csvs downloaded from www.afltables.com.
     '''
-    if filename == 'bg3.txt':
+    if name == 'bg3.txt':
         # Scores with rounds
         # - GameNum ends with '.', single space for nums > 100k
         # - Rounds are 'R1'-'R22' or 'QF', 'PF', 'GF'.
@@ -62,7 +68,7 @@ def load_scores(filename='bg3.txt'):
         sep = '[. ] +'
         sep = '[. ] +'
 
-    elif filename == 'bg7.txt':
+    elif name == 'bg7.txt':
         # Attendance stats
         # - RowNum ends with '.', single space for nums > 100k
         # - Spectators ends with '*' for finals games
@@ -76,13 +82,13 @@ def load_scores(filename='bg3.txt'):
     else:
         raise ValueError("Unexpected data file")
 
-    df = pd.read_csv(filename, skiprows=2, sep=sep,
+    df = pd.read_csv(name, skiprows=2, sep=sep,
                      names=cols.split(), parse_dates=['Date'],
                      quoting=csv.QUOTE_NONE, engine='python')
     return df
 
 
-def prepare_scores(df):
+def prepare_game_scores(df):
     '''
     DataFrame with rows giving each team's results in a game
     (1 game -> 2 rows for home and away teams)
@@ -111,7 +117,7 @@ def prepare_scores(df):
     return scores
 
 
-def calc_ladder(scores_df, year=2016):
+def calc_team_ladder(scores_df, year=2016):
     '''
     DataFrame with championship ladder with round-robin games for the given year.
     Wins, draws and losses are worth 4, 2 and 0 points respectively.
@@ -120,13 +126,18 @@ def calc_ladder(scores_df, year=2016):
     # df.loc[] matches dates as strings like '20160506' or '2016'.
     # Note here rounds are simple strings so sort with R1 < R10 < R2 < .. < R9
     #      (we could change this with a CategoricalIndex)
-    # Note also that pandas 0.18.0 has a bug with .loc on MultiIndexes
-    #      if dates are the first level. It works as expected if we
-    #      move the dates to the end before slicing
-    scores2 = scores_df.reorder_levels([1, 2, 3, 0]).sort_index()
-    x = scores2.loc(axis=0)[:, 'R1':'R9', :, str(year):str(year)]
-    # Don't need to put levels back in order as we are about to drop 3 of them
-    # x = x.reorder_levels([3, 0, 1, 2]).sort_index()
+    if pd.__version__ > '0.18.0':
+        # MultiIndex slicing works ok
+        scores2 = scores_df.sort_index()
+        x = scores2.loc(axis=0)[str(year), :, 'R1':'R9', :]
+    else:
+        # pandas 0.18.0 has a bug with .loc on MultiIndexes
+        # if dates are the first level. It works as expected if we
+        # move the dates to the end before slicing
+        scores2 = scores_df.reorder_levels([1, 2, 3, 0]).sort_index()
+        x = scores2.loc(axis=0)[:, 'R1':'R9', :, str(year):str(year)]
+        # Don't need to put levels back in order as we are about to drop 3 of them
+        # x = x.reorder_levels([3, 0, 1, 2]).sort_index()
 
     # Just keep Team. This does a copy too, avoiding SettingWithCopy warning
     y = x.reset_index(['Date', 'Venue', 'Round'], drop=True)
@@ -137,7 +148,7 @@ def calc_ladder(scores_df, year=2016):
     y['D'] = 0
     y.loc[y['F'] == y['A'], 'D'] = 1
     y.eval('L = 1*(A>F)', inplace=True)
-    print(y)
+    #print(y)
 
     # Subtotal by team and then sort by Points/Percentage
     t = y.groupby(level='Team').sum()
@@ -147,10 +158,9 @@ def calc_ladder(scores_df, year=2016):
 
     # Add ladder position (note: assumes no ties!)
     ladder['Pos'] = pd.RangeIndex(1, len(ladder) + 1)
-    print(ladder)
+    #print(ladder)
 
     return ladder
-
 
 
 if __name__ == '__main__':
